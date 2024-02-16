@@ -1,7 +1,9 @@
 // Create a webpage with a 16x16 grid of square divs.
 const grid = document.querySelector(".container");
-const column = 16;
-const row = 16;
+const btn = document.getElementById("prompt");
+
+let column = 16;
+let row = 16;
 
 function createCanvas() {
   for (let i = 0; i < column; i++) {
@@ -21,3 +23,8 @@ function createCanvas() {
   }
 }
 createCanvas();
+
+btn.addEventListener("click", () => {
+  const input = prompt("Enter a new size for the grid max(100x100):");
+  console.log(input);
+});

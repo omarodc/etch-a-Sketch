@@ -30,4 +30,16 @@ h1 {
   box-sizing: border-box;
 }
 
-
+button {
+  font-size: 30px;
+  color: white;
+  border-radius: 20px;
+  background-color: #008cba;
+  margin: 15px;
+  padding: 10px 30px;
+  border: 3px solid #008cba;
+  -webkit-user-select: none;
+  user-select: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
